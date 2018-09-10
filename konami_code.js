@@ -13,14 +13,16 @@ const codes = [
 
 
 
-let index = 0;
 
-const body = document.getElementById('body')
- 
-body.addEventListener(codes, function(event) {
-  alert('I was clicked!')
-})
-function init(e) {
+
+function init() {
+  let index = 0;
+
+  const body = document.getElementById('body')
+   
+  body.addEventListener(codes, function(event) {
+    alert('I was clicked!')
+    })
   const key = e.key;
   
   if (key === codes[index]) {
